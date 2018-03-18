@@ -1,0 +1,6 @@
+language: lua
+install:
+  - luarocks install busted
+  - luarocks install say
+script:
+  - busted test
