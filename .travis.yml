@@ -1,4 +1,6 @@
 language: lua
+before_install:
+  - apt install luajit luarocks
 install:
   - luarocks install busted
   - luarocks install say
