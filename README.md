@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/minetest-streets/bustest.svg?branch=master)](https://travis-ci.org/minetest-streets/bustest)
 # Bustest
 Bustest aims at making unit-testing of minetest mods easier by providing additional assertions, that can be used by unit testing tools like *busted*.
 
