@@ -1,7 +1,7 @@
 local assert = require("luassert")
 local say = require("say")
 
-local minetest = require("src.minetest")
+local minetest = require("src.bustest.minetest")
 
 say:set_namespace("en")
 
