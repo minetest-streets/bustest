@@ -1,5 +1,5 @@
 package = "bustest"
-version = "0.0.1-dev"
+version = "scm-1"
 source = {
    url = "git+https://github.com/minetest-streets/bustest"
 }
