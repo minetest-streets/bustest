@@ -10,4 +10,5 @@ require "src.assertions.node.node_has_front_texture";
 require "src.assertions.node.node_has_back_texture";
 require "src.assertions.node.node_has_alias";
 
-require "src.assertions.chat.chatmessage_sent";
+require "src.assertions.chat.chatmessage_sent_all";
+require "src.assertions.chat.chatmessage_sent_player";

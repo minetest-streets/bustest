@@ -1,6 +1,8 @@
 minetest = {
     registered_nodes = {},
-    sent_chatmessages = {},
+    sent_chatmessages = {
+        global = {}
+    },
     registered_alias = {}
 }
 
@@ -35,7 +37,15 @@ function minetest.register_node(nodename, node_definition)
 end
 
 function minetest.chat_send_all(message)
-    table.insert(minetest.sent_chatmessages, message)
+    table.insert(minetest.sent_chatmessages.global, message)
+end
+
+function minetest.chat_send_player(name, message)
+    if minetest.sent_chatmessages[name] == nil then
+        minetest.sent_chatmessages[name] = {}
+    end
+    
+    table.insert(minetest.sent_chatmessages[name], message)
 end
 
 function minetest.register_alias(oldname, newname)
